@@ -1,0 +1,52 @@
+_index
+	1-1785567037
+		index 1145
+		net.maxon.asset.created 521
+		net.maxon.asset.metaproperties 762
+		net.maxon.asset.timestamp 521
+		net.maxon.asset.versiontag 335
+		net.maxon.node.category 341
+		strings_ar-AR 868
+		strings_cs-CZ 862
+		strings_de-DE 851
+		strings_en-US 1042
+		strings_es-ES 854
+		strings_fr-FR 855
+		strings_it-IT 850
+		strings_ja-JP 854
+		strings_ko-KR 850
+		strings_pl-PL 882
+		strings_pt-BR 857
+		strings_zh-CN 848
+	1-1785567037.json
+		net.maxon.asset.created.json 782
+		net.maxon.asset.metaproperties.json 1458
+		net.maxon.asset.timestamp.json 782
+		net.maxon.asset.versiontag.json 289
+		net.maxon.node.category.json 320
+		strings_ar-AR.json 1017
+		strings_cs-CZ.json 1004
+		strings_de-DE.json 1001
+		strings_en-US.json 2094
+		strings_es-ES.json 1004
+		strings_fr-FR.json 1007
+		strings_it-IT.json 1000
+		strings_ja-JP.json 1009
+		strings_ko-KR.json 1003
+		strings_pl-PL.json 1014
+		strings_pt-BR.json 1009
+		strings_zh-CN.json 1000
+	index-1785567037-6728AAD031CB506C.dat 1
+category_2468666d866a481886c91c7155440264
+	1
+		asset 0
+		net.maxon.asset.previewimageurl.meta.svg 3151
+databaseid 31
+databaseinfo_database_gmnomhq_mxfhwqlr5e59zs
+	1
+		asset 0
+preset_eohpns2aebmrhhgagdedys
+	1
+		asset 73716
+		net.maxon.asset.previewimageurl.meta.svg 626
+version 30

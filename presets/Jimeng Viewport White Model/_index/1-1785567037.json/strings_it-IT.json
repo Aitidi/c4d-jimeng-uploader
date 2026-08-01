@@ -1,0 +1,39 @@
+﻿{
+	"identification": "net.maxon.asset.compactedmetadata",
+	"content": {
+		"data": [
+			{
+				"_0": "category@2468666d866a481886c91c7155440264",
+				"_1": "1"
+			},
+			{
+				"dataType": "<net.maxon.interface.datadescriptiondefinition>C",
+				"content": {
+					"referenceClassType": "net.maxon.class.datadescriptiondefinition",
+					"_info": {},
+					"_description": [
+						{
+							"referenceDataType": "net.maxon.interface.datadictionary-C",
+							"_impl": {
+								"_mode": 1,
+								"_keyType": "net.maxon.datatype.internedid",
+								"_fastData": [
+									"net.maxon.description.base.identifier",
+									{
+										"dataType": "net.maxon.datatype.internedid",
+										"content": "net.maxon.object.base.name"
+									},
+									"net.maxon.description.string.base.translatedstring",
+									{
+										"dataType": "net.maxon.interface.string-C",
+										"content": "Preset"
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		]
+	}
+}

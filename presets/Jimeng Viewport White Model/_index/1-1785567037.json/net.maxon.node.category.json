@@ -1,0 +1,15 @@
+﻿{
+	"identification": "net.maxon.asset.compactedmetadata",
+	"content": {
+		"data": [
+			{
+				"_0": "preset_EoHpNs2AEBMrHhGAgdEdyS",
+				"_1": "2f5e28c98536a372f3a44d73b37e35ec"
+			},
+			{
+				"dataType": "net.maxon.datatype.id",
+				"content": "category@2468666d866a481886c91c7155440264"
+			}
+		]
+	}
+}

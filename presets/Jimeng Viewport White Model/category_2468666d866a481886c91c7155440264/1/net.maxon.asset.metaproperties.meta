@@ -1,0 +1,33 @@
+﻿{
+	"identification": "net.maxon.asset.metadata",
+	"content": {
+		"dataType": "net.maxon.interface.datadictionary-C",
+		"content": {
+			"referenceDataType": "net.maxon.interface.datadictionary-C",
+			"_impl": {
+				"_mode": 2,
+				"_data": [
+					{
+						"dataType": "(net.maxon.datatype.internedid,bool)",
+						"content": {
+							"_0": "net.maxon.asset.metaproperties.base.automaticpreview",
+							"_1": true
+						}
+					},
+					{
+						"dataType": "bool",
+						"content": false
+					},
+					{
+						"dataType": "net.maxon.datatype.internedid",
+						"content": "net.maxon.asset.metaproperties.base.automaticpreview"
+					},
+					{
+						"dataType": "bool",
+						"content": false
+					}
+				]
+			}
+		}
+	}
+}

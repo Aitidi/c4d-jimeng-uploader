@@ -1,0 +1,43 @@
+category_2468666d866a481886c91c7155440264
+category@2468666d866a481886c91c7155440264
+net.maxon.assettype.category
+	1
+	1
+		asset
+		strings_fr-FR.meta
+		strings_de-DE.meta
+		strings_pl-PL.meta
+		strings_es-ES.meta
+		strings_it-IT.meta
+		strings_ar-AR.meta
+		net.maxon.asset.previewimageurl.meta.svg
+		net.maxon.asset.metaproperties.meta
+		strings_ko-KR.meta
+		strings_pt-BR.meta
+		net.maxon.asset.timestamp.meta
+		strings_zh-CN.meta
+		strings_ja-JP.meta
+		strings_cs-CZ.meta
+		net.maxon.asset.created.meta
+		strings_en-US.meta
+databaseinfo_database_gmnomhq_mxfhwqlr5e59zs
+databaseinfo_database@GMnOMhq_MxfhwQlr5E59zS
+net.maxon.assettype.database
+	1
+	7f498d4624c30160d8984701d306aa99
+		asset
+		net.maxon.asset.timestamp.version
+		net.maxon.asset.created.version
+preset_eohpns2aebmrhhgagdedys
+preset_EoHpNs2AEBMrHhGAgdEdyS
+net.maxon.assettype.preset.rendersettings
+	1
+	2f5e28c98536a372f3a44d73b37e35ec
+		asset
+		net.maxon.asset.timestamp.version
+		net.maxon.asset.versiontag.version
+		net.maxon.asset.created.version
+		net.maxon.node.category.meta
+		net.maxon.asset.previewimageurl.meta.svg
+		net.maxon.asset.metaproperties.meta
+		strings_en-US.meta

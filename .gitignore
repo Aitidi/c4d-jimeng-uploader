@@ -1,0 +1,12 @@
+# Python runtime caches
+__pycache__/
+*.py[cod]
+
+# Locally generated release files
+dist/
+
+# Editor and operating-system metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

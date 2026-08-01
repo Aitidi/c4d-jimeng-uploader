@@ -1,0 +1,37 @@
+﻿{
+	"identification": "net.maxon.asset.compactedmetadata",
+	"content": {
+		"data": [
+			{
+				"_0": "category@2468666d866a481886c91c7155440264",
+				"_1": "1"
+			},
+			{
+				"dataType": "net.maxon.datatype.universaldatetime",
+				"content": {
+					"timestamp": 1619032786
+				}
+			},
+			{
+				"_0": "databaseinfo_database@GMnOMhq_MxfhwQlr5E59zS",
+				"_1": "7f498d4624c30160d8984701d306aa99"
+			},
+			{
+				"dataType": "net.maxon.datatype.universaldatetime",
+				"content": {
+					"timestamp": 1785567037
+				}
+			},
+			{
+				"_0": "preset_EoHpNs2AEBMrHhGAgdEdyS",
+				"_1": "2f5e28c98536a372f3a44d73b37e35ec"
+			},
+			{
+				"dataType": "net.maxon.datatype.universaldatetime",
+				"content": {
+					"timestamp": 1785567010
+				}
+			}
+		]
+	}
+}
