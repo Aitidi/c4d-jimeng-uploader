@@ -1,5 +1,7 @@
 # 即梦 Seedance 白模上传器（C4D 2026.3.1）
 
+[English README](README_EN.md)
+
 此插件使用 Cinema 4D 的 **Viewport Renderer** 直接输出 MP4 白模动画，再通过本机临时桥接交给即梦网页导入。
 
 ## 安装
