@@ -14,7 +14,26 @@ PLUGIN_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if PLUGIN_ROOT not in sys.path:
     sys.path.insert(0, PLUGIN_ROOT)
 
-from jimeng_c4d import bridge, media, protocol
+from jimeng_c4d import bridge, i18n, media, protocol
+
+
+class LocalizationTests(unittest.TestCase):
+    def test_language_normalization_and_toggle(self):
+        self.assertEqual(i18n.normalize_language("en"), i18n.LANGUAGE_EN)
+        self.assertEqual(i18n.normalize_language("unsupported"), i18n.LANGUAGE_ZH)
+        self.assertEqual(i18n.other_language(i18n.LANGUAGE_ZH), i18n.LANGUAGE_EN)
+        self.assertEqual(i18n.other_language(i18n.LANGUAGE_EN), i18n.LANGUAGE_ZH)
+
+    def test_translated_button_and_status(self):
+        self.assertEqual(i18n.text("zh", "language_button"), "English")
+        self.assertEqual(i18n.text("en", "language_button"), "中文")
+        self.assertEqual(i18n.text("en", "status_failed", message="test"), "Failed: test")
+
+    def test_all_translation_keys_exist_in_both_languages(self):
+        self.assertEqual(
+            set(i18n.STRINGS[i18n.LANGUAGE_ZH]),
+            set(i18n.STRINGS[i18n.LANGUAGE_EN]),
+        )
 
 
 class ProtocolTests(unittest.TestCase):
