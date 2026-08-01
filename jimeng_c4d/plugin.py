@@ -18,7 +18,7 @@ class JimengUploaderCommand(plugins.CommandData):
         global _DIALOG
         if _DIALOG is None:
             _DIALOG = UploaderDialog()
-        return _DIALOG.Open(c4d.DLG_TYPE_ASYNC, PLUGIN_ID, defaultw=560, defaulth=560)
+        return _DIALOG.Open(c4d.DLG_TYPE_ASYNC, PLUGIN_ID, defaultw=680, defaulth=590)
 
     def RestoreLayout(self, secret):
         global _DIALOG
