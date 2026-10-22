@@ -12,14 +12,17 @@ class VideoValidationError(RuntimeError):
 
 
 def _ffmpeg_candidates():
-    env_path = os.environ.get("JIMENG_UPLOADER_FFMPEG", "").strip()
-    if env_path:
-        yield env_path
+    # Prefer the project-specific name, retaining the previous override.
+    for variable in ("C4D_JIMENG_UPLOADER_FFMPEG", "JIMENG_UPLOADER_FFMPEG"):
+        env_path = os.environ.get(variable, "").strip()
+        if env_path:
+            yield env_path
     found = shutil.which("ffmpeg")
     if found:
         yield found
     package_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     workspace_root = os.path.dirname(package_root)
+    # Optional shared runtime from the separate Blender uploader project.
     bundled = os.path.join(workspace_root, "jimeng_blender_uploader", "runtime", "ffmpeg", "windows-x86_64", "ffmpeg.exe")
     if os.path.isfile(bundled):
         yield bundled

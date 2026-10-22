@@ -5,10 +5,12 @@ from __future__ import annotations
 import json
 import os
 
+from .constants import PLUGIN_NAME
+
 
 def _config_dir():
     root = os.environ.get("APPDATA") or os.path.expanduser("~")
-    return os.path.join(root, "JimengC4DUploader")
+    return os.path.join(root, PLUGIN_NAME)
 
 
 def config_path():
@@ -20,8 +22,13 @@ def default_output_dir():
 
 
 def load():
+    # Read existing preferences until they are next saved under the new name.
+    path = config_path()
+    if not os.path.exists(path):
+        root = os.path.dirname(_config_dir())
+        path = os.path.join(root, "JimengC4DUploader", "settings.json")
     try:
-        with open(config_path(), "r", encoding="utf-8") as stream:
+        with open(path, "r", encoding="utf-8") as stream:
             value = json.load(stream)
         return value if isinstance(value, dict) else {}
     except (OSError, ValueError, TypeError):

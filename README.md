@@ -1,15 +1,19 @@
-# 即梦 Seedance 白模上传器（C4D 2026.3.1）
+# c4d-jimeng-uploader
 
 [English README](README_EN.md)
 
-此插件使用 Cinema 4D 的 **Viewport Renderer** 直接输出 MP4 白模动画，再通过本机临时桥接交给即梦网页导入。
+Cinema 4D 即梦白模上传器，适用于 C4D 2026.3.1。此插件使用 Cinema 4D 的 **Viewport Renderer** 直接输出 MP4 白模动画，再通过本机临时桥接交给即梦网页导入。
+
+仓库：[Aitidi/c4d-jimeng-uploader](https://github.com/Aitidi/c4d-jimeng-uploader)。项目名称、插件菜单、窗口标题和安装目录统一使用 `c4d-jimeng-uploader`；Python 入口为 `c4d_jimeng_uploader.pyp`，模块目录为 `c4d_jimeng_uploader`。
 
 ## 安装
 
-1. 将整个 `jimeng_c4d_uploader` 文件夹（包括其中的 `presets` 子目录）复制到 Cinema 4D 2026 的 `plugins` 目录。
+1. 从 [Releases](https://github.com/Aitidi/c4d-jimeng-uploader/releases/latest) 下载并解压安装包，将整个 `c4d-jimeng-uploader` 文件夹（包括其中的 `presets` 子目录）复制到 Cinema 4D 2026 的 `plugins` 目录。若下载的是源码 ZIP，请先将解压后的项目根目录重命名为 `c4d-jimeng-uploader`。
 2. 重启 Cinema 4D。
-3. 从 Extensions 菜单打开“Seedance_c4d_uploader”。
+3. 从 Extensions 菜单打开“c4d-jimeng-uploader”。
 4. 首次打开会从插件内置的 `presets/Jimeng Viewport White Model` 导入 `Jimeng Viewport White Model` Render Settings 到当前 `.c4d` 文件。
+
+从旧版升级时，先移除 `plugins` 中旧的 `jimeng_c4d_uploader` 或 `jimeng-c4d-uploader` 安装目录，避免重复加载。新版仍可读取旧的 `JimengC4DUploader/settings.json`，下次保存时写入 `%APPDATA%/c4d-jimeng-uploader/settings.json`。`Jimeng Viewport White Model` 是内置渲染预设名称，保持不变以兼容已有场景。
 
 
 ## 使用
@@ -23,4 +27,10 @@
 ## 依赖与限制
 - Viewport Renderer 仅支持本机渲染，不能经 Team Render 分发。
 - 即梦网页协议和 localhost 跨域策略为外部未公开接口，网页改版后可能需要调整桥接逻辑。
+- 可通过 `C4D_JIMENG_UPLOADER_FFMPEG` 指定 FFmpeg 路径以执行完整编码检查；兼容旧的 `JIMENG_UPLOADER_FFMPEG` 环境变量。未找到 FFmpeg 时，仅执行容器与 H.264 标记检查。
+
+## 开发与打包
+
+- 运行 `python -m unittest discover -s tests -v` 执行测试。
+- 运行 `./build_release.ps1` 生成 `dist/c4d-jimeng-uploader-v<版本号>.zip`；包名和内部安装目录不受源码文件夹名影响。
 

@@ -5,7 +5,7 @@ import os
 # This is a development ID. Obtain a unique Plugin Café ID before distributing
 # the plug-in outside this workstation.
 PLUGIN_ID = 1069872
-PLUGIN_NAME = "Seedance_c4d_uploader"
+PLUGIN_NAME = "c4d-jimeng-uploader"
 PLUGIN_HELP = "Render Viewport Renderer white-model MP4 videos and upload them to Jimeng / 使用 Viewport Renderer 渲染白模 MP4 并上传至即梦"
 
 WHITE_RENDER_SETTINGS_NAME = "Jimeng Viewport White Model"

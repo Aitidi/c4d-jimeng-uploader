@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from .constants import PLUGIN_NAME
 
 LANGUAGE_ZH = "zh"
 LANGUAGE_EN = "en"
@@ -10,7 +11,7 @@ DEFAULT_LANGUAGE = LANGUAGE_ZH
 
 STRINGS = {
     LANGUAGE_ZH: {
-        "dialog_title": "Seedance_c4d_uploader",
+        "dialog_title": PLUGIN_NAME,
         "language_button": "English",
         "label_mode": "上传方式",
         "mode_camera": "相机白模渲染",
@@ -60,7 +61,7 @@ STRINGS = {
         "error_link_expired": "即梦链接已失效，请重新上传。",
     },
     LANGUAGE_EN: {
-        "dialog_title": "Seedance_c4d_uploader",
+        "dialog_title": PLUGIN_NAME,
         "language_button": "中文",
         "label_mode": "Upload mode",
         "mode_camera": "Camera white-model render",

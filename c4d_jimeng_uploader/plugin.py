@@ -13,7 +13,7 @@ _DIALOG = None
 _REGISTERED = False
 
 
-class JimengUploaderCommand(plugins.CommandData):
+class C4DJimengUploaderCommand(plugins.CommandData):
     def Execute(self, _doc):
         global _DIALOG
         if _DIALOG is None:
@@ -37,6 +37,6 @@ def register():
         info=0,
         icon=None,
         help=PLUGIN_HELP,
-        dat=JimengUploaderCommand(),
+        dat=C4DJimengUploaderCommand(),
     )
     return _REGISTERED
